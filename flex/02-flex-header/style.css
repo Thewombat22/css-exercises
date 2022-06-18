@@ -27,13 +27,14 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 6px;
-  align-items: center;
 }
 
-ul {
+.left-links ul {
   display: flex;
-  margin: 8px;
-  padding: 8px;
-  gap: 8px;
+  gap: 9px;
+}
+
+.right-links ul {
+  display: flex;
+  gap: 9px;
 }

@@ -26,3 +26,73 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Creating the top level flex container */
+body {
+  display: flex;
+}
+
+/* Creating the second level container for 3 flex columns */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Container for the middle column of the second level container */
+.middle-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 4;
+}
+
+.footer{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  display: flex;
+  padding: 16px;
+}
+
+.sidebar {
+  display: flex;
+  flex: 0 0 300px;
+  flex-shrink: 0;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar li a {
+  
+  font-size: 24px;
+  text-decoration: none;
+  color: #eee;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 19px;
+  padding: 32px;
+}
+
+.card {
+  flex: 0 0 200px;
+  padding: 32px;
+  margin-right: 32px;
+}
